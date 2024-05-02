@@ -16,45 +16,55 @@ document.addEventListener('DOMContentLoaded', function() {
                 tagButton.onclick = () => showReviewsForTag(tag);
                 tagsContainer.appendChild(tagButton);
             });
-        });
+        })
+        .catch(error => console.error('Failed to load tags:', error));
 
     fetch('scripts/reviews.json')
         .then(response => response.json())
         .then(data => {
             reviewsData = data.reviews;
             console.log("Reviews Data Loaded", reviewsData);
-        });
+        })
+        .catch(error => console.error('Failed to load reviews:', error));
 
-        function showReviewsForTag(selectedTag) {
-            console.log("Selected Tag: ", selectedTag);  // Log the selected tag for debugging
-        
-            // Filter reviews that include the selected tag
-            const filteredReviews = reviewsData.filter(review => review.tags.includes(selectedTag));
-            console.log("Filtered Reviews: ", filteredReviews);  // Log the filtered reviews for debugging
-        
-            // Update the title to show which tag is being displayed
-            tagTitle.textContent = `Reviews for ${selectedTag}`;
-        
-            // Generate HTML for each review and update the inner HTML of the reviewContainer
-            reviewContainer.innerHTML = filteredReviews.map(review => `
-                <div class="review">
+    function showReviewsForTag(selectedTag) {
+        const filteredReviews = reviewsData.filter(review => review.tags.includes(selectedTag));
+        tagTitle.textContent = `Reviews for ${selectedTag}`;
+        reviewContainer.innerHTML = filteredReviews.map(review => {
+            let movieClass = '';
+            switch (review.movie) {
+                case 'Double Happiness':
+                    movieClass = 'double-happiness';
+                    break;
+                case 'Saving Face':
+                    movieClass = 'saving-face';
+                    break;
+                case 'Halving the Bones':
+                    movieClass = 'halving-the-bones';
+                    break;
+                case 'Picture Bride':
+                    movieClass = 'picture-bride';
+                    break;
+                case 'In Between Days':
+                    movieClass = 'in-between-days';
+                    break;
+            }
+            return `
+                <div class="review ${movieClass}">
                     <h3>${review.title}</h3>
                     <p><strong>Username:</strong> ${review.username}</p>
                     <p><strong>Date:</strong> ${review.date}</p>
                     <p>${review.reviewText}</p>
                     <a href="${review.link}" target="_blank">Read more</a>
                 </div>
-            `).join('');
-        
-            // Hide the tags container and show the reviews display
-            tagsContainer.style.display = 'none';
-            reviewsDisplay.style.display = 'block';
-        }
-        
-        // Function to go back to the tags display from the reviews
-        window.goBack = function() {
-            tagsContainer.style.display = 'block';
-            reviewsDisplay.style.display = 'none';
-        }
-        
+            `;
+        }).join('');
+        tagsContainer.style.display = 'none';
+        reviewsDisplay.style.display = 'block';
+    }
+
+    window.goBack = function() {
+        tagsContainer.style.display = 'block';
+        reviewsDisplay.style.display = 'none';
+    }
 });

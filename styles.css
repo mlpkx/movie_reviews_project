@@ -28,8 +28,42 @@ header {
     cursor: pointer;
 }
 
-#reviewsDisplay {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f8f9fa;
+
+.review {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #ddd;
 }
+
+.review:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.double-happiness {
+    background-color: #26532B;
+}
+
+.saving-face {
+    background-color: #254E70;
+}
+    
+    
+  
+.halving-the-bones {
+    background-color: #8E8358; 
+}
+
+.picture-bride {
+    background-color: #5D2E46;
+}
+
+.in-between-days {
+    background-color: #2B3D41; 
+}
+
+
+  
