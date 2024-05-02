@@ -12,7 +12,8 @@ header {
     text-align: center;
 }
 
-#tags-container {
+
+#tagsContainer {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -27,9 +28,8 @@ header {
     cursor: pointer;
 }
 
-#reviews-container {
+#reviewsDisplay {
     margin: 20px;
     padding: 20px;
     background-color: #f8f9fa;
 }
-
