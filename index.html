@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tags Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore Movie Reviews by Tags</h1>
+    </header>
+    <div id="tagsContainer"></div> <!-- Updated id to match the JavaScript usage -->
+    <div id="reviewsDisplay" style="display:none;"> <!-- Added for the dynamic show/hide functionality -->
+        <h2 id="tagTitle"></h2>
+        <div id="reviewContainer"></div>
+        <button onclick="goBack()">Back to Tags</button>
+    </div>
+    <script src="scripts/main.js"></script> <!-- Updated the script src path -->
+</body>
+</html>
