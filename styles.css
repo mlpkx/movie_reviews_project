@@ -3,31 +3,74 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative; 
+    height: 100vh; 
+    overflow-x: hidden; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('assets/bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.5; 
+    z-index: -1; 
 }
 
 header {
-    background-color: #007bff;
+    background-color: #0f102e;
     color: white;
     padding: 10px 20px;
     text-align: center;
 }
 
+#movieAudIcon {
+    height: 50px; 
+    width: auto;  
+    vertical-align: middle; 
+}
 
 #tagsContainer {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    min-width: 300px;
+    max-width: 80%;
+    min-height: 100px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    z-index: 10;
 }
+
 
 .tag {
-    padding: 8px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #3498db; 
+    color: #ffffff; 
+    font-size: 18px;
+    font-weight: bold; 
+    border-radius: 20px; 
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
+.tag:hover {
+    background-color: #2980b9; 
+    color: #ddeeff; 
+    transform: scale(1.1); 
+}
 
 .review {
     padding: 10px;
@@ -37,6 +80,19 @@ header {
     transition: all 0.3s ease;
     border: 1px solid #ddd;
 }
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-poster {
+    height: 80px; 
+    width: auto; 
+    margin-left: 20px; 
+}
+
 
 .review:hover {
     opacity: 0.9;
