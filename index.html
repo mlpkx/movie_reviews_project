@@ -8,12 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Unseen Cinema: Discover Voices from Movie Reviews</h1>
-        <img src="assets/movie_aud.svg" alt="Movie Audience Icon" id="movieAudIcon">
+        <div class="header-title">
+            <h1>Unseen Cinema: <br>Discover Voices from Movie Review</h1>
+        </div>
+        <a href="into.html" class="header-link">
+            <img src="assets/movie_aud.svg" alt="Movie Audience Icon" class="header-icon">
+            <span class="hover-text">Project Introduction</span>
+        </a>
+        <a href="https://colab.research.google.com/drive/1kcliCjOtYGtWLEqDU3HIrn1P5J44GV2O?usp=sharing" class="header-link">
+            <img src="assets/topic_code.svg" alt="Topic Code Icon" class="header-icon">
+            <span class="hover-text">Topic Modeling Workbook</span>
+        </a>
+        <a href="https://colab.research.google.com/drive/1Ma5fjwz-pvOD-GFyHas8Ev2EqWtzTiSD?usp=sharing" class="header-link">
+            <img src="assets/tag_classifier.svg" alt="Tag Classifier Icon" class="header-icon">
+            <span class="hover-text">Classifier Workbook</span>
+        </a>        
     </header>
-        <div id="tagsContainer"></div> 
+        <div id="tagsContainer"></div>
+        <h2 id="introText">Despite growing recognition, women directors—especially those narrating Asian immigration experiences in North America—are still significantly underrepresented, 
+            with their stories and perspectives frequently marginalized in mainstream film discourse. This project explores the realm of movie reviews to highlight some unique voices from audiences. 
+            Explore audience reviews of the following films by clicking on the tags below: <em>Double Happiness</em> (1994), <em>Halving the Bones</em> (1995), <em>Picture Bride</em> (1995), <em>Saving Face</em> (2004), and <em>In Between Days</em> (2006)—all directed by women.
+            See the code notebooks and project intro for more details. </h2> 
         <div id="reviewsDisplay" style="display:none;">
-        <button onclick="goBack()">Back to Tags</button>
+        <button onclick="goBack()">Return to Tags</button>
         <h2 id="tagTitle"></h2>
         <div id="reviewContainer"></div>
     </div>
