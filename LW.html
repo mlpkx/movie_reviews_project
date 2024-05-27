@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Director Lulu Wang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-right: 5px;
+        background: #eee;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .tab:hover {
+        background: #ddd;
+    }
+    .active-tab {
+        background-color: white;
+        border-bottom: 2px solid green;
+    }
+    .content {
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+    .source-link {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    .source-link:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .icon:hover + .tooltip {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1>Lulu Wang and <em>The Farewell</em> (2019)</h1>
+<img src="assets/LW.jpg" alt="Lulu Wang">
+<div>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="openTab(event, 'PersonalInfo')">Personal Information</div>
+        <div class="tab" onclick="openTab(event, 'MovieInfo')">Movie Information</div>
+        <div class="tab" onclick="openTab(event, 'BehindScene')">Behind-the-Scene</div>
+    </div>
+</div>
+<div id="PersonalInfo" class="content" style="display: block;">
+    <ul>
+        <li><strong>Ethnicity:</strong> Chinese American</li>
+        <li><strong>Occupation:</strong> Director, Screenwriter, Producer</li>
+        <li><strong>Birth:</strong> Beijing, China, 1983</li>
+        <li><strong>Education:</strong> Boston College (BA in Literature and Music)</li>
+    </ul>
+</div>
+<div id="MovieInfo" class="content">
+    <ul>
+        <li><strong>Title:</strong> The Farewell</li>
+        <li><strong>Where to watch:</strong> Amazon Prime, Hulu</li>
+        <li><strong>Movie info:</strong> "The Farewell" is a 2019 comedy-drama film written and directed by Lulu Wang. The film stars Awkwafina as Billi, a Chinese-American woman who travels to China after learning that her grandmother, Nai Nai, has been diagnosed with terminal cancer. The family decides to keep the diagnosis a secret from Nai Nai, and instead, schedule an impromptu wedding as a guise for a family gathering. The film explores themes of cultural differences, family bonds, and the immigrant experience.</li>
+        <li><strong>Based on:</strong> The film is based on Lulu Wang's real-life experiences, which she first recounted on the radio show "This American Life."</li>
+        <li><strong>Awards:</strong>
+            <ul>
+                <li>Independent Spirit Award for Best Feature</li>
+                <li>Golden Globe Award for Best Actress – Motion Picture Comedy or Musical (Awkwafina)</li>
+                <li>Satellite Award for Best Actress – Motion Picture</li>
+                <li>Critics' Choice Movie Award for Best Acting Ensemble</li>
+                <li>Sundance Film Festival Audience Award Nominee</li>
+                <li>Palm Springs International Film Festival Directors to Watch Award</li>
+            </ul>
+        </li>
+        <li><strong>Genre:</strong> Comedy-Drama</li>
+    </ul>
+</div>
+<div id="BehindScene" class="content">
+    <ul>
+        <li><strong>Theme:</strong> The film explores themes of cultural identity, family loyalty, and the immigrant experience, focusing on the complex emotions that arise from living between two cultures.</li>
+        <li><strong>Cultural background:</strong> Lulu Wang drew from her own experiences as a Chinese immigrant in America to create a film that resonates with audiences through its authenticity and emotional depth.<br><a href="https://example.com/source1" class="source-link">Source</a></li>
+        <li><strong>Concept development:</strong> Wang discusses how the story evolved from her personal life and the challenges of balancing comedy and drama in the narrative.<br><a href="https://example.com/source2" class="source-link">Source</a></li>
+        <li><strong>Film technique:</strong> Wang employs a naturalistic style, using long takes and minimal editing to immerse the audience in the characters' lives and emotions.<br><a href="https://example.com/source3" class="source-link">Source</a></li>
+        <li><strong>Collaborator:</strong>
+            <ul>
+                <li><strong>Screenwriter:</strong> Lulu Wang wrote the screenplay, ensuring that it closely reflected her personal experiences.<br><a href="https://example.com/source4" class="source-link">Source</a></li>
+                <li><strong>Actor:</strong>
+                    <ul>
+                        <li>Awkwafina as Billi - Wang chose Awkwafina for her ability to portray both the comedic and dramatic aspects of the character.<br><a href="https://example.com/source5" class="source-link">Source</a></li>
+                        <li>Shuzhen Zhao as Nai Nai - Wang appreciated Zhao's authentic and heartfelt performance, which brought depth to the character.<br><a href="https://example.com/source6" class="source-link">Source</a></li>
+                        <li>X Mayo as Little Nai Nai - Wang selected Mayo for her ability to balance humor and sincerity in the role.<br><a href="https://example.com/source7" class="source-link">Source</a></li>
+                    </ul>
+                </li>
+                <li><strong>Producer:</strong> The film was produced by Daniele Tate Melia, Peter Saraf, and Marc Turtletaub, who supported Wang's vision and helped bring the project to life.<br><a href="https://example.com/source8" class="source-link">Source</a></li>
+            </ul>
+        </li>
+        <li><strong>Fund support:</strong> The film received financial backing from various independent film grants and organizations dedicated to supporting diverse voices in cinema.<br><a href="https://example.com/source9" class="source-link">Source</a></li>
+        <li><strong>Challenge:</strong> Wang faced challenges in ensuring the film's cultural authenticity while making it accessible to a broad audience. She also navigated the emotional complexities of telling a story so close to her own life.<br><a href="https://example.com/source10" class="source-link">Source</a></li>
+        <li><strong>Anecdote:</strong> Lulu Wang shared a story about how her family's real-life reaction to the film mirrored the emotional journey depicted on screen, highlighting the universal themes of love and loss.<br><a href="https://example.com/source11" class="source-link">Source</a></li>
+    </ul>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Director Ruth Ozeki</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-right: 5px;
+        background: #eee;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .tab:hover {
+        background: #ddd;
+    }
+    .active-tab {
+        background-color: white;
+        border-bottom: 2px solid green;
+    }
+    .content {
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+    .source-link {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    .source-link:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .icon:hover + .tooltip {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1>Ruth Ozeki and <em>Halving the Bones</em> (1995)</h1>
+<img src="assets/RO.jpg" alt="Ruth Ozeki">
+<div>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="openTab(event, 'PersonalInfo')">Personal Information</div>
+        <div class="tab" onclick="openTab(event, 'MovieInfo')">Movie Information</div>
+        <div class="tab" onclick="openTab(event, 'BehindScene')">Behind-the-Scene</div>
+    </div>
+</div>
+<div id="PersonalInfo" class="content" style="display: block;">
+    <ul>
+        <li><strong>Ethnicity:</strong> American, Canadian, Half Japanese</li>
+        <li><strong>Occupation:</strong> Novelist, Filmmaker, Professor, Zen Buddhist Priest</li>
+        <li><strong>Birth:</strong> New Haven, Connecticut, 1956</li>
+        <li><strong>Education:</strong> Smith College (BA); Nara University of Education (Classical Japanese literature)</li>
+        <li><strong>Residence:</strong> New Haven, Kyoto, Western Massachusetts, New York, British Columbia</li>
+    </ul>
+</div>
+<div id="MovieInfo" class="content">
+    <ul>
+        <li><strong>Title:</strong> Halving the Bones</li>
+        <li><strong>Where to watch:</strong> Vimeo</li>
+        <li><strong>Movie info:</strong>Halving the Bones is a 1995 film by Ruth Ozeki, blending documentary and fiction to explore themes of family, memory, and cultural identity. The film follows Ruth, a half-Japanese filmmaker, as she attempts to reconnect with her mother by delivering her grandmother's bones, leading to a profound exploration of her family's history and her own sense of identity. The film is known for its innovative use of home movies, narrative storytelling, and documentary footage.</li>
+        <li><strong>Based on:</strong> The film is based on Ruth Ozeki's personal experiences and family history, particularly her relationship with her Japanese grandmother and her mother. It delves into the cultural and generational gaps within her family. However, this film is not 100% factual; it is a blended version of factuality and fictionality.</li>
+        <li><strong>Awards:</strong>Sundance Film Festival, International Documentary Association Award Nomination, Montreal World Film Festival, New York/San Francisco and Seattle Asian American Film Festivals, Margaret Mead Film Festival</li>
+        <li><strong>Genre:</strong>A "half," neither documentary nor fiction</li>
+    </ul>
+</div>
+<div id="BehindScene" class="content">
+    <ul>
+        <li><strong>Theme:</strong> She uses bones as a metaphor and explores themes of mixed blood.<br><a href="https://hyp.is/EaOT1hivEe-Y5bOkGaU-CA/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+        <li><strong>Cultural background:</strong> She felt a sense of estrangement, acutely aware of her mother's "Japaneseness" and the feeling that "wherever I go, I'm always different."<br><a href="https://hyp.is/SCy0UBivEe-kLG8kVsxAPA/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+        <li><strong>Cultural background:</strong> She talks about people's views of her in Japan.<br><a href="https://hyp.is/5N4KGhivEe-hFadQUiumTw/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+        <li><strong>Concept development:</strong> In the film, the narrative reunites three generations. The film explores the concept of "halved."<br><a href="https://hyp.is/CTTIPhitEe-U2e9gGNDBkQ/www.ruthozeki.com/writing-film/halving-the-bones" class="source-link">Source</a></li>
+        <li><strong>Film technique:</strong> She made up a lot of things in the film. She fakes various voiceovers, home movies, and her grandmothers' diary. She talks about her choice of music for some scenes and the way to inform audiences about faux features.<br><a href="https://hyp.is/ZUn_6BkYEe-SN3Ndqj9I6Q/www.wmm.com/catalog/film/halving-the-bones/" class="source-link">Source</a></li>
+        <li><strong>Film technique:</strong> She uses a style partly factual and partly speculative.<br><a href="https://hyp.is/bs4s4hivEe-zFN9eBoZf9A/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+        <li><strong>Collaborator - Cinematographer:</strong> She works with Jim Fealy who has worked on commercials as well as the feature "The Doom Generation." She also mentions that Jim Fealy pretended to be her grandfather lurking in the palms with a new camera and a brand new wife when shooting one scene for the film.<br><a href="https://hyp.is/ZUn_6BkYEe-SN3Ndqj9I6Q/www.wmm.com/catalog/film/halving-the-bones/" class="source-link">Source</a></li>
+        <li><strong>Collaborator - Actor:</strong> She tells the story of how her mom comes in and talks in the film. What makes the film documentary.<br><a href="https://hyp.is/37MmQhkYEe-3uiu5CQXrDg/www.wmm.com/catalog/film/halving-the-bones/" class="source-link">Source</a></li>
+        <li><strong>Anecdote:</strong> Maybe a reason why she decided to do this film.<br><a href="https://hyp.is/-wsQJhivEe-JJIfc52FMFA/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+        <li><strong>Anecdote:</strong> Anecdote about her relationship with her mother.<br><a href="https://hyp.is/r0ApahivEe-Y5rvybxhGjw/www.albany.edu/writers-inst/webpages4/filmnotes/fns04n9.html" class="source-link">Source</a></li>
+    </ul>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+</script>
+</body>
+</html>

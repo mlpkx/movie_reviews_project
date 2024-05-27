@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Director Kayo Hatta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-right: 5px;
+        background: #eee;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .tab:hover {
+        background: #ddd;
+    }
+    .active-tab {
+        background-color: white;
+        border-bottom: 2px solid green;
+    }
+    .content {
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+    .source-link {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    .source-link:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .icon:hover + .tooltip {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1>Kayo Hatta and <em>Picture Bride</em> (1995)</h1>
+<img src="assets/KH.jpg" alt="Kayo Hatta">
+<div>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="openTab(event, 'PersonalInfo')">Personal Information</div>
+        <div class="tab" onclick="openTab(event, 'MovieInfo')">Movie Information</div>
+        <div class="tab" onclick="openTab(event, 'BehindScene')">Behind-the-Scene</div>
+    </div>
+</div>
+<div id="PersonalInfo" class="content" style="display: block;">
+    <ul>
+        <li><strong>Ethnicity:</strong> Japanese American</li>
+        <li><strong>Occupation:</strong> Director, Writer, Producer</li>
+        <li><strong>Birth:</strong> Honolulu, Hawai'i, United States, 1958-03-18</li>
+        <li><strong>Death:</strong> Accidentally drowned in the San Diego area in 2005</li>
+        <li><strong>Education:</strong> Stanford University (BA); University of California, Los Angeles, Film School (MA)</li>
+        <li><strong>Residence:</strong> 
+            <ul>
+                <li>Born in: Honolulu</li>
+                <li>Former: New York, San Francisco, Los Angeles, Encinitas</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="MovieInfo" class="content">
+    <ul>
+        <li><strong>Title:</strong> Picture Bride</li>
+        <li><strong>Where to watch:</strong> Amazon</li>
+        <li><strong>Movie info:</strong> The film is a 1995 American feature-length film directed by Kayo Hatta and starring Youki Kudoh, Akira Takayama, Tamlyn Tomita, Cary-Hiroyuki Tagawa, and Toshirō Mifune. The film was released in 1995 by Miramax Films.</li>
+        <li><strong>Based on:</strong> Real stories about Japanese young women journeying to Hawai'i to marry Japanese men who were plantation workers</li>
+        <li><strong>Awards:</strong> The Sundance Film Festival Audience Award in 1995 for Best Dramatic Film</li>
+        <li><strong>Genre:</strong>
+            <ul>
+                <li>Kayo Hatta talked about the genre types she intended to create and why a dramatic film is important in reaching broad audiences.<br><a href="https://hyp.is/ywkA8NmtEe2jAn_PZgXRDA/caamedia.org/picturebride/make.html" class="source-link">Source</a></li>
+                <li>Kayo Hatta aimed for a compelling narrative beyond docu drama.<br><a href="https://hyp.is/-7XfYNmuEe2oPqv3XCokoQ/caamedia.org/picturebride/make.html" class="source-link">Source</a></li>
+            </ul>
+        </li>
+        <li><strong>Theme:</strong> Kayo Hatta talked about her artistic interpretation of history in the film to reflect ethnic perspectives as a theme.<br><a href="https://hyp.is/a1KB1ts9Ee29SR-0JNAZ_w/caamedia.org/picturebride/make.html" class="source-link">Source</a></li>
+        <li><strong>Research:</strong> To prepare for the film, Kayo Hatta did primary research interviewing actual picture brides with the help of local historian Barbara Kwakami.<br><a href="https://hyp.is/cSw_3tmtEe2nCENRVtbtlg/caamedia.org/picturebride/make.html" class="source-link">Source</a></li>
+    </ul>
+</div>
+<div id="BehindScene" class="content">
+    <ul>
+        <li><strong>Cultural background:</strong> Kayo Hatta had an activist background and did a lot of work in community organizing in San Francisco.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=643ffefdbbdd080008894e70" class="source-link">Source</a></li>
+        <li><strong>Concept development:</strong> Kayo Hatta explained what she meant by saying "a woman's point of view" and a Japanese story in the concept development of the film Picture Bride.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644004d630be3c0008deceb6" class="source-link">Source</a></li>
+        <li><strong>Experiment:</strong> Kayo Hatta made short clips as an experiment/exercise for the feature film.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644005d894094900086fb91f" class="source-link">Source</a></li>
+        <li><strong>Film technique:</strong> Kayo Hatta applied documentary techniques in filming the fictional romance Picture Bride.<br><a href="https://hyp.is/_tGZQOIGEe2OJ1utgySNVA/washingtoncitypaper.com/article/295261/kayo-hattas-bridal-path" class="source-link">Source</a></li>
+        <li><strong>Collaborator:</strong>
+            <ul>
+                <li><strong>Screenwriter:</strong> Kayo Hatta worked with her sister Mari to produce the Picture Bride screen script.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=6440080c30be3c0008deceb8" class="source-link">Source</a></li>
+                <li><strong>Actor:</strong>
+                    <ul>
+                        <li>Kayo Hatta talked about the casting decision she made for the main character Riyo played by Youki Kudoh.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=64400f85f9c0ae000882119c" class="source-link">Source</a></li>
+                        <li>Kayo Hatta discussed the casting decision to choose the Asia American actor Tamlyn Tomita.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=6440113dbbdd080008894e71" class="source-link">Source</a></li>
+                        <li>Kayo Hatta talked about her choice: let Cary-Hiroyuki Tagawa play Kanzaki.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=64401224bbdd080008894e72" class="source-link">Source</a></li>
+                        <li>They chose to let Toshiro Mifune play the Benshi, the silent picture narrator.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644012b7bbdd080008894e73" class="source-link">Source</a></li>
+                    </ul>
+                </li>
+                <li><strong>Crew:</strong> Kayo mentioned the contribution of her crew in making the filming happen.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644016c930be3c0008decebb" class="source-link">Source</a></li>
+                <li><strong>Producer:</strong> Kayo thanked her producers, the women behind her for making this film happen, Diane Mark and Lisa Onodera.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=6440171430be3c0008decebc" class="source-link">Source</a></li>
+            </ul>
+        </li>
+        <li><strong>Fund support:</strong> She applied for grants from the American Film Institute. But later both Kayo Hatta and Tamlyn Tomita also mentioned the fund and support from the local communities in Hawai'i.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644008fb94094900086fb921" class="source-link">Source</a></li>
+        <li><strong>Challenge:</strong> Kayo Hatta talked about her concerns when the famous Japanese actor Mifune agreed to participate and whether he would have complaints when working with a woman director. Kayo Hatta talked about the challenges during the filming due to the location problem because they were close to a military base and there were helicopter sounds during the filming. The production house was set in old abandoned plantation workers' homes and red dirt was everywhere. Kayo had to balance between the ambitious scene planning and the actual shooting due to insufficient funding.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=644013d9bbdd080008894e74" class="source-link">Source</a></li>
+        <li><strong>Anecdote:</strong> Kayo made this film for people, not for awards. They returned to Hawai'i to show the film to the family and community.<br><a href="https://annotate.tv/watch/643ffca883641500082beea2?annotationId=64401a581aee3b0008f28166" class="source-link">Source</a></li>
+    </ul>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+</script>
+</body>
+</html>

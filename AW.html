@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Director Alice Wu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-right: 5px;
+        background: #eee;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .tab:hover {
+        background: #ddd;
+    }
+    .active-tab {
+        background-color: white;
+        border-bottom: 2px solid green;
+    }
+    .content {
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+    .source-link {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    .source-link:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .icon:hover + .tooltip {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1>Alice Wu and <em>Saving Face</em> (2004)</h1>
+<img src="assets/AW.jpg" alt="Alice Wu">
+<div>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="openTab(event, 'PersonalInfo')">Personal Information</div>
+        <div class="tab" onclick="openTab(event, 'MovieInfo')">Movie Information</div>
+        <div class="tab" onclick="openTab(event, 'BehindScene')">Behind-the-Scene</div>
+    </div>
+</div>
+<div id="PersonalInfo" class="content" style="display: block;">
+    <ul>
+        <li><strong>Ethnicity:</strong> Chinese American</li>
+        <li><strong>Occupation:</strong> Director, Screenwriter</li>
+        <li><strong>Birth:</strong> San Jose, California, United States, 1970</li>
+        <li><strong>Education:</strong> Stanford University (BS, MS in Computer Science)</li>
+    </ul>
+</div>
+<div id="MovieInfo" class="content">
+    <ul>
+        <li><strong>Title:</strong> Saving Face</li>
+        <li><strong>Where to watch:</strong> Amazon</li>
+        <li><strong>Movie info:</strong> "Saving Face" is a 2004 romantic comedy-drama film directed by Alice Wu, starring Michelle Krusiec, Joan Chen, and Lynn Chen. The film centers on a young Chinese-American surgeon, Wilhelmina "Wil" Pang, whose life is turned upside down when her mother, Hwei-Lan Gao, moves in with her, pregnant and unwed. The film explores themes of family, cultural identity, and LGBTQ+ relationships within the Chinese-American community.</li>
+        <li><strong>Based on:</strong> Alice Wu's personal experiences and her observations of the Chinese-American community.</li>
+        <li><strong>Awards:</strong> 
+            <ul>
+                <li>Nominated for the Breakthrough Director Award at the 2005 Gotham Awards</li>
+        
+                <li>Winner of the Viewer's Choice Award at the 2005 Golden Horse Film Festival</li>
+                <li>Nominated for the GLAAD Media Award for Outstanding Film in Limited Release at the 2006 GLAAD Media Awards</li>
+               <li>Alice Wu won the Visionary Award at the San Diego Asian Film Festival</li>
+                <li>Alice Wu won the Audience Award for Best Narrative at the San Francisco International Asian American Film Festival in 2005</li>
+              
+            </ul>
+        </li>
+        <li><strong>Genre:</strong> Romantic Comedy-Drama</li>
+    </ul>
+</div>
+<div id="BehindScene" class="content">
+    <ul>
+        <li><strong>Theme:</strong> The film explores themes of family, identity, and acceptance, particularly focusing on the intersection of Chinese-American and LGBTQ+ identities.</li>
+        <li><strong>Cultural background:</strong> Alice Wu draws from her own background as a Chinese-American to portray the nuanced cultural dynamics within the film.<br><a href="https://example.com/source1" class="source-link">Source</a></li>
+        <li><strong>Concept development:</strong> Alice Wu discusses how the story evolved from her personal experiences and the importance of representation.<br><a href="https://example.com/source2" class="source-link">Source</a></li>
+        <li><strong>Film technique:</strong> Wu uses a blend of humor and drama to address serious themes, employing a style that is both heartfelt and accessible.<br><a href="https://example.com/source3" class="source-link">Source</a></li>
+        <li><strong>Collaborator:</strong>
+            <ul>
+                <li><strong>Screenwriter:</strong> Alice Wu wrote the screenplay herself, drawing from personal and community stories.<br><a href="https://example.com/source4" class="source-link">Source</a></li>
+                <li><strong>Actor:</strong>
+                    <ul>
+                        <li>Michelle Krusiec as Wilhelmina "Wil" Pang - Wu chose Krusiec for her ability to embody the complex character of Wil.<br><a href="https://example.com/source5" class="source-link">Source</a></li>
+                        <li>Joan Chen as Hwei-Lan Gao - Chen was selected for her depth and experience, bringing authenticity to the role.<br><a href="https://example.com/source6" class="source-link">Source</a></li>
+                        <li>Lynn Chen as Vivian Shing - Wu appreciated Chen's portrayal of a confident and independent love interest.<br><a href="https://example.com/source7" class="source-link">Source</a></li>
+                    </ul>
+                </li>
+                <li><strong>Producer:</strong> The film was produced by Will Smith's production company, Overbrook Entertainment.<br><a href="https://example.com/source8" class="source-link">Source</a></li>
+            </ul>
+        </li>
+        <li><strong>Fund support:</strong> The film received financial backing from Overbrook Entertainment and various grants supporting independent filmmakers.<br><a href="https://example.com/source9" class="source-link">Source</a></li>
+        <li><strong>Challenge:</strong> Wu faced challenges in balancing the comedic and dramatic elements of the story, ensuring the cultural nuances were respectfully and accurately portrayed.<br><a href="https://example.com/source10" class="source-link">Source</a></li>
+        <li><strong>Anecdote:</strong> Alice Wu shared a story about how her mother inspired the character of Hwei-Lan Gao and the importance of family in her own life.<br><a href="https://example.com/source11" class="source-link">Source</a></li>
+    </ul>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+</script>
+</body>
+</html>

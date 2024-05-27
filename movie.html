@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            padding-top: 200px;
+        }
+
+        .logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #003049;
+    z-index: 10;
+    background-color: #f77f00;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo:hover {
+    background-color: #003049;
+    color: #f77f00;
+}
+
+        #reel-canvas-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+        .movie-block {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            width: 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-block img, .movie-block iframe {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie-block .details {
+            padding: 20px;
+        }
+
+        .movie-block .details h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+
+        .movie-block .details p {
+            margin: 0 0 20px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .movie-block .details .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .movie-block .details .buttons a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #fff;
+            border-radius: 3px;
+            transition: transform 0.3s, background-color 0.3s;
+            font-size: 16px;
+        }
+
+        .movie-block .details .buttons a:nth-child(1) {
+            background-color: #003049;
+        }
+
+        .movie-block .details .buttons a:nth-child(2) {
+            background-color: #f77f00;
+        }
+
+        .movie-block .details .buttons a:hover {
+            transform: rotateY(180deg);
+            background-color: #555;
+        }
+
+        .movie-block .details .buttons a:hover:nth-child(1) {
+            background-color: #002538;
+        }
+
+        .movie-block .details .buttons a:hover:nth-child(2) {
+            background-color: #e76f00;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <h1>Movie Trailer Page</h1>
+    </div>
+    <div id="reel-canvas-container"></div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/oNTA_A3llwg" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Double Happiness</h2>
+            <p>Directed by Mina Shum, 1994</p>
+            <div class="buttons">
+                <a href="MS.html">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <a href="https://www.kanopy.com/en/queenslibrary/product/2288451" target="_blank">
+            <img src="assets/HB.jpg" alt="Halving the Bones">
+        </a>
+        <div class="details">
+            <h2>Halving the Bones</h2>
+            <p>Directed by Ruth Ozeki, 1995</p>
+            <div class="buttons">
+                <a href="RO.html">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://player.vimeo.com/video/433252745" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Picture Bride</h2>
+            <p>Directed by Kayo Hatta, 1995</p>
+            <div class="buttons">
+                <a href="kh.html">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/HF6rNrh60hI" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Saving Face</h2>
+            <p>Directed by Alice Wu, 2004</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <a href="https://www.nytimes.com/video/movies/1194817098723/movie-minutes-in-between-days.html" target="_blank">
+            <img src="assets/IBD.jpg" alt="In Between Days">
+        </a>
+        <div class="details">
+            <h2>In Between Days</h2>
+            <p>Directed by So Yong Kim, 2006</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/zM4ikl2DCmE" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Lucky Grandma</h2>
+            <p>Directed by Sasie Sealy, 2019</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/RofpAjqwMa8" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>The Farewell</h2>
+            <p>Directed by Lulu Wang, 2019</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/XdKzUbAiswE" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Turning Red</h2>
+            <p>Directed by Domee Shi, 2022</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/jyI-AM5VXDo" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Joy Ride</h2>
+            <p>Directed by Adele Lim, 2023</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-block">
+        <iframe src="https://www.youtube.com/embed/kA244xewjcI" frameborder="0" allowfullscreen></iframe>
+        <div class="details">
+            <h2>Past Lives</h2>
+            <p>Directed by Celine Song, 2023</p>
+            <div class="buttons">
+                <a href="#">Behind-the-Scene Stories</a>
+                <a href="review.html">Audience Review</a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/movie.js"></script>
+</body>
+</html>

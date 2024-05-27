@@ -3,37 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Tags Explorer</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Digital Memories Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        }
+        header {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #eee;
+            border-bottom: 2px solid #ddd;
+        }
+        h1 {
+            color: #f77f00;
+            font-size: 50px;
+        }
+        p {
+            color: #333;
+            font-size: 20px;
+        }
+        h2 {
+            color:#003049;
+            font-size: 30px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .fake-link {
+            color: #aaa;
+            pointer-events: none;
+        }
+        .arrow {
+            margin-left: 10px;
+            width: 16px;
+            height: 16px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-title">
-            <h1>Unseen Cinema: <br>Discover Voices from Movie Review</h1>
-        </div>
-        <a href="into.html" class="header-link">
-            <img src="assets/movie_aud.svg" alt="Movie Audience Icon" class="header-icon">
-            <span class="hover-text">Project Introduction</span>
-        </a>
-        <a href="https://colab.research.google.com/drive/1kcliCjOtYGtWLEqDU3HIrn1P5J44GV2O?usp=sharing" class="header-link">
-            <img src="assets/topic_code.svg" alt="Topic Code Icon" class="header-icon">
-            <span class="hover-text">Topic Modeling Workbook</span>
-        </a>
-        <a href="https://colab.research.google.com/drive/1Ma5fjwz-pvOD-GFyHas8Ev2EqWtzTiSD?usp=sharing" class="header-link">
-            <img src="assets/tag_classifier.svg" alt="Tag Classifier Icon" class="header-icon">
-            <span class="hover-text">Classifier Workbook</span>
-        </a>        
+        <h1>Welcome to the Reel Diaspora Archive</h1>
     </header>
-        <div id="tagsContainer"></div>
-        <h2 id="introText">Despite growing recognition, women directors—especially those narrating Asian immigration experiences in North America—are still significantly underrepresented, 
-            with their stories and perspectives frequently marginalized in mainstream film discourse. This project explores the realm of movie reviews to highlight some unique voices from audiences. 
-            Explore audience reviews of the following films by clicking on the tags below: <em>Double Happiness</em> (1994), <em>Halving the Bones</em> (1995), <em>Picture Bride</em> (1995), <em>Saving Face</em> (2004), and <em>In Between Days</em> (2006)—all directed by women.
-            See the code notebooks and project intro for more details. </h2> 
-        <div id="reviewsDisplay" style="display:none;">
-        <button onclick="goBack()">Return to Tags</button>
-        <h2 id="tagTitle"></h2>
-        <div id="reviewContainer"></div>
+    <div class="container">
+        <section>
+            <h2>Project Mission</h2>
+            <p>In the world of films, stories of immigration and the diaspora often remain in the shadows, particularly those crafted by women directors. Despite increasing recognition, 
+                these filmmakers remain underrepresented, their narratives and experiences are often overlooked in mainstream film discourse. 
+                This project aims to spotlight some often-unseen aspects of film production by creating a digital memories archive that features the narratives of ten women directors and their films, which profoundly shape East Asian diasporic experiences in North America. It offers a platform to amplify these unique voices and share the stories, struggles, and joys behind the scenes of their critical works.</p>
+        </section>
+        <section>
+            <h2>Explore the Archive</h2>
+            <a href="movie.html">
+                <h3>Watch all trailers <img src="assets/arrow.png" alt="arrow" class="arrow"></h3>
+            </a>
+            <p>Go back 30 years with the 1994 film <em>Double Happiness</em> by Mina Shum, a heartwarming story of cultural identity and personal discovery. Enjoy this trailer and explore the full collection of ten trailers showcasing the works of ten women directors.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oNTA_A3llwg" frameborder="0" allowfullscreen></iframe>
+            <a href="director.html" title="director profile page">
+                <h3>Interactive Director Profiles <img src="assets/arrow.png" alt="arrow" class="arrow"></h3>
+            </a>
+            <p>Journey through the careers of ten women directors, from Mina Shum's <em>Double Happiness</em> to Celine Song's <em>Past Lives</em>. Each profile page includes tagged-annotations made by me on interviews, articles, blogs, podcasts in which these directors share the behind-the-scene stories.
+                The annotations on each director's page are currently work-in-progress. This project serves as a tech demonstration, showcasing the potential for digital dialogues between directors, audiences, and future readers through detailed annotations. To explore this feature, click on the audience icon on each Behind-the-Scene page. This will allow you to access a corresponding review that speaks to the directors' ideas.</p>
+
+            <a href="review.html" title="audience review page">
+                <h3>Unseen Voice in Audience <img src="assets/arrow.png" alt="arrow" class="arrow"></h3>
+            </a>
+            <p>Explore the world of movie reviews to showcase distinctive perspectives from audiences of the ten films.</p>
+        </section>
+        <section>
+            <h2>The Real Diaspora Timeline</h2>
+            <a href="timeline.html" title="audience review page">
+                <h3>Explore the Reel Diaspora Timeline<img src="assets/arrow.png" alt="arrow" class="arrow"></h3>
+            </a>
+            <p>Welcome to the Reel Diaspora timeline, where you can explore the intersection of cinema and history through the films of women directors focusing on East Asian diasporic narratives in North America. Discover how each film, placed within its release year, reflects and responds to significant events related to immigration and minorities. Navigate through time to uncover behind-the-scene stories and historical contexts, gaining a deeper understanding of how these films contribute to the discourse on identity, culture, and belonging. </p>
+        </section>
     </div>
-    <script src="scripts/main.js"></script> 
+    <script src="scripts/movie.js"></script>
 </body>
 </html>

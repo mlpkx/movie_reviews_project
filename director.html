@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Director Profiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .timeline {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 40px 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+       
+        .timeline-item {
+            position: relative;
+            width: 18%; /* Adjusted to fit five items in one line */
+            text-align: center;
+            margin: 20px 1%; /* Adding some space between items */
+        }
+        
+        .timeline-item a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 auto 10px;
+            position: relative;
+            z-index: 2;
+            transition: background 0.3s;
+            padding-top: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .timeline-item a img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .timeline-item a:hover {
+            background: #f00;
+        }
+        .timeline-item span {
+            display: block;
+            font-size: 25px;
+            font-weight: bold; 
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive Director Profiles</h1>
+    
+    <ul class="timeline">
+        <li class="timeline-item">
+            <a href="MS.html" title="Mina Shum">
+                1994<br>Double Happiness
+                <img src="assets/DH.png" alt="Mina Shum">
+            </a>
+            <span>Mina Shum</span>
+        </li>
+        <li class="timeline-item">
+            <a href="RO.html" title="Ruth Ozeki">
+                1995<br>Halving the Bones
+                <img src="assets/HB.png" alt="Ruth Ozeki">
+            </a>
+            <span>Ruth Ozeki</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director3.html" title="Kayo Hatta">
+                1995<br>Picture Bride
+                <img src="assets/PB.png" alt="Kayo Hatta">
+            </a>
+            <span>Kayo Hatta</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director4.html" title="Alice Wu">
+                2004<br>Saving Face
+                <img src="assets/SF.png" alt="Alice Wu">
+            </a>
+            <span>Alice Wu</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director5.html" title="So Yong Kim">
+                2006<br>In Between Days
+                <img src="assets/IBD.png" alt="So Yong Kim">
+            </a>
+            <span>So Yong Kim</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director6.html" title="Sasie Sealy">
+                2019<br>Lucky Grandma
+                <img src="assets/LG.png" alt="Sasie Sealy">
+            </a>
+            <span>Sasie Sealy</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director7.html" title="Lulu Wang">
+                2019<br>The Farewell
+                <img src="assets/TF.png" alt="Lulu Wang">
+            </a>
+            <span>Lulu Wang</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director8.html" title="Domee Shi">
+                2022<br>Turning Red
+                <img src="assets/TR.png" alt="Domee Shi">
+            </a>
+            <span>Domee Shi</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director9.html" title="Adele Lim">
+                2023<br>Joy Ride
+                <img src="assets/JR.png" alt="Adele Lim">
+            </a>
+            <span>Adele Lim</span>
+        </li>
+        <li class="timeline-item">
+            <a href="director10.html" title="Celine Song">
+                2023<br>Past Lives
+                <img src="assets/PL.png" alt="Celine Song">
+            </a>
+            <span>Celine Song</span>
+        </li>
+    </ul>
+
+    <p>Please join me in making these connections! Use <a href="https://web.hypothes.is/" title="Hypothes.is">Hypothesis</a> to annotate each director's page and add information to the tagged sections. </p>
+
+</body>
+</html>

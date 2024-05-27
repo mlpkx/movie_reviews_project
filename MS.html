@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Director Mina Shum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville&family=East+Sea+Dokdo&family=Inter:wght@300;600&family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin: 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin-right: 5px;
+        background: #eee;
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+    .tab-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .tab:hover {
+        background: #ddd;
+    }
+    .active-tab {
+        background-color: white;
+        border-bottom: 2px solid green;
+    }
+    .content {
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        margin-top: -1px;
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        width: 100%;
+        max-width: 300px;
+    }
+    .source-link {
+        color: #1a0dab;
+        text-decoration: none;
+    }
+    .source-link:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .icon:hover + .tooltip {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<h1>Mina Shum and <em>Double Happiness</em> (1994)</h1>
+<img src="assets/MS.jpg" alt="Mina Shum">
+<div>
+    <div class="tab-container">
+        <div class="tab active-tab" onclick="openTab(event, 'PersonalInfo')">Personal Information</div>
+        <div class="tab" onclick="openTab(event, 'MovieInfo')">Movie Information</div>
+        <div class="tab" onclick="openTab(event, 'BehindScene')">Behind-the-Scene</div>
+    </div>
+</div>
+<div id="PersonalInfo" class="content" style="display: block;">
+    <ul>
+        <li><strong>Ethnicity:</strong> Chinese Canadian</li>
+        <li><strong>Occupation:</strong> Filmmaker, director, writer</li>
+        <li><strong>Birth:</strong> Hong Kong, 1966</li>
+        <li><strong>Education:</strong> University of British Columbia (BA); Canadian Film Centre (director's program)</li>
+        <li><strong>Residence:</strong> Hong Kong, Toronto, Vancouver</li>
+    </ul>
+</div>
+<div id="MovieInfo" class="content">
+    <ul>
+        <li><strong>Title:</strong> Double Happiness</li>
+        <li><strong>Where to watch:</strong> Tubi, Amazon</li>
+        <li><strong>Movie info:</strong> This film is a 1994 Canadian drama film directed by Mina Shum. It was the first feature directed by a Chinese Canadian Woman.</li>
+        <li><strong>Based on:</strong> This story is written by Mina Shum.</li>
+        <li><strong>Awards:</strong> Berlin International Film Festival Wolfgang Staudte Award, Genie Awards, Toronto International Film Festival, Torino International Festival of Young Cinema</li>
+        <li><strong>Genre:</strong> Comedy, Drama</li>
+    </ul>
+</div>
+<div id="BehindScene" class="content">
+    <ul>
+        <li><strong>Theme:</strong> The film explores the theme of a young girl transitioning into womanhood, focusing
+            on her developing sexuality in the presence of a father figure. This situation is
+            challenging because it involves the discomfort of acknowledging sexual activity within
+            the family dynamic, where neither parents nor children are comfortable with the other's
+            sexual lives.<br><a href="https://hyp.is/3hXvhhlKEe-gHu9n7gzD6A/www.cbc.ca/player/play/video/1.3673626">Source</a></li>
+         <li><strong>Cultural background:</strong> Both Mina and Sandra touch on the topic of cultural expectations, where their parents
+            may seek suitable partners for their children, reflecting societal pressures to marry
+            within the same ethnicity. But they care more about being in love.<br><a href="https://hyp.is/UkPK6hlLEe-zwg_-C-cm3w/www.cbc.ca/player/play/video/1.3673626">Source</a></li>
+         <li><strong>Concept development:</strong> She talks about representation on screen in the end of this interview.<br><a href="https://hyp.is/zrpZdBlxEe-CnR93QCMcpw/www.cbc.ca/player/play/video/1.4259568">Source</a></li>
+         <li><strong>Concept development:</strong> Mina delves into the concept of leaving home and achieving independence, drawing from
+            her own experiences of leaving home at eighteen. She aims to develop this theme as
+            a model for young women, exploring the challenges and triumphs associated with stepping
+            out on one's own<br><a href="https://hyp.is/Lp_tzBlKEe-zuuOwF5MqUw/www.cbc.ca/player/play/video/1.3673626">Source</a></li>
+         <li><strong>Concept development:</strong> Mina Shum talks about the aim in her production: How do I authentically present myself
+            in a society that often does not want me? She mentions the feeling of being outcast.
+            She wants to use films to empower people to be more themselves.<br><a href="https://annotate.tv/watch/664ff8b9a0e7400008eaf411?annotationId=664ff8f06376a30008b708f6">Source</a></li>
+         <li><strong>Collaborator - Actor:</strong> How Mina persuaded Sandra to play Jade. Sandra thought she was not a good fit in the
+            beginning.<br><a href="https://hyp.is/8_xEuhlMEe-TBMcBoAN1TQ/www.cbc.ca/player/play/video/1.3673626">Source</a><img src="assets/movie_aud.svg" alt="icon" class="icon" onclick="window.open('https://www.imdb.com/review/rw0337688/?ref_=tt_urv')"><span class="tooltip">Listen to what the audience thinks</span></li>
+         <li><strong>Collaborator - Actor:</strong> Mina met Sandra in 1993. During During the shoot of "The Diary of Evelyn Lau," Mina
+            asked Sandra to read and audition for Jade.<br><a href="https://hyp.is/iJGSZhlMEe-b6uMGM5EO4A/www.cbc.ca/player/play/video/1.3673626">Source</a></li>
+         <li><strong>Fund support:</strong> She mentioned that this was the first big-budget film she had ever worked on. $100
+            million.<br><a href="https://annotate.tv/watch/664e5b1dfe6b0300080592ce?annotationId=664e5c0622100800085d8c8e">Source</a></li>
+         <li><strong>Challenge:</strong> Mina Shum talks about how perceptions and stereotypes about who can be a director
+            have been a consistent challenge. These perceptions are often based on gender and
+            appearance, leading to assumptions that she can't be a director because she doesn't
+            fit the traditional image of one. She mentions that early in her career, her youthful
+            appearance made it even harder for people to take her seriously as a director.<br><a href="https://hyp.is/jtDUuhiAEe-dqt_nxizL9g/www.cbc.ca/player/play/video/1.4259568">Source</a></li>
+         <li><strong>Challenge:</strong> Mina is referencing experiences related to typecasting and representation in the
+            media. Connie Chung, as a prominent Asian American journalist, often became a point
+            of reference for Asian female roles in media.<br><a href="https://hyp.is/JejdThlNEe-TBReiFJEDCA/www.cbc.ca/player/play/video/1.3673626">Source</a></li>
+         <li><strong>Anecdote:</strong> Her father wrote a scene he wanted her to shoot in the film Double Happiness. The
+            scene was about their father-daughter relationship, not about her film. Though she
+            didn't include it, she was able to take care of her parents as they aged. She chose
+            a career that wasn't as stable as her parents had hoped, but her dream came true.<br><a href="https://annotate.tv/watch/664e5b1dfe6b0300080592ce?annotationId=664e5cf1eed0350008087652">Source</a></li>
+         <li><strong>Anecdote:</strong> The first Asian-Canadian woman director. She felt grateful that it happened.<br><a href="https://hyp.is/m3mz8hlxEe-bxrtFjYzSXA/www.cbc.ca/player/play/video/1.4259568">Source</a></li>
+    </ul>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active-tab";
+}
+</script>
+</body>
+</html>
